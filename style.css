@@ -41,6 +41,14 @@ justify-content: center;
 }
 
 
+
+
+h3{
+    background-color: transparent; /* Your desired background color */
+    backdrop-filter: blur(80px); 
+}
+
+
 #header {
     position: fixed;
     z-index: 1000;
@@ -52,7 +60,7 @@ justify-content: center;
 }
 
 #header .header-cont {
-    min-height: 15vh;
+    min-height: 13vh;
     background-color: rgba(18, 7, 55, 0.5); 
 }
 
@@ -440,6 +448,18 @@ justify-content: center;
 }
 
 
+/* Mobile View */
+@media (max-width: 768px) {
+    #skills .skills-bottom {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the number of columns */
+        gap: 20px;
+    }
+
+    #skills .skills-item {
+        max-width: none; /* Remove max-width constraint for grid layout */
+    }
+}
 
 /* projecrs */
 
