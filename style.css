@@ -52,7 +52,7 @@ justify-content: center;
 }
 
 #header .header-cont {
-    min-height: 8vh;
+    min-height: 15vh;
     background-color: rgba(18, 7, 55, 0.5); 
 }
 
@@ -295,12 +295,22 @@ justify-content: center;
     max-width: 700px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    flex-shrink: 0;
     margin: 0 auto;
 }
 
-    
+@media (max-width: 768px) {
+    .gif img {
+        max-width: 95%;
+    }
 }
+
+@media (max-width: 480px) {
+    .gif img {
+        max-width: 80%;
+    }
+}
+
+    
 
 
 /* end of HS */
