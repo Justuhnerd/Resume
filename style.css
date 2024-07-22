@@ -613,7 +613,8 @@ h3{
 }
 
   a.dr {
-    display: inline-block;
+    text-align: center;
+    margin: 20px;
     padding: 15px 40px;
     text-decoration: none;
     width: auto;
@@ -632,6 +633,18 @@ h3{
   
   
 /* aobiut */
+
+
+
+/* Zoom effect on hover */
+img {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+img:hover {
+    transform: scale(1.1); /* Zoom in by 10% */
+}
+
 
 
 /*  ONTACT info */
