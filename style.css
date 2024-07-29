@@ -89,6 +89,7 @@ h3{
     z-index: 1;
     flex-direction: column;
     overflow-x: hidden;
+    border-radius: 10px;
 
 }
 
@@ -106,6 +107,8 @@ h3{
     background-color: transparent;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
+    border-radius: 10px;
+
   }
 
   #header .nav-list ul a{
