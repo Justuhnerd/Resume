@@ -670,15 +670,16 @@ img:hover {
     padding: 20px;
 }
 
- .contact-items {
+.contact-items {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: center;
-    gap: 100px;
+    gap: 20px; /* Decreased gap for smaller screens */
 }
 
 #contact .contact-item {
-    flex: 1 1 400px;
-    max-width: 400px;
+    flex: 1 1 300px; /* Decreased minimum width for flexibility on small screens */
+    max-width: 400px; /* Retain the max width */
     margin: 20px;
     padding: 20px;
     font-size: 14px;
@@ -693,6 +694,21 @@ img:hover {
 #contact .contact-item:hover {
     background-color: rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 12px rgba(187, 10, 113, 0.2), 0 3px 6px #ee1ae733;
+}
+
+/* Additional Media Query for smaller screens */
+@media (max-width: 600px) {
+    #contact {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .contact-items {
+        gap: 10px; /* Further decrease gap on mobile */
+    }
+
+    #contact .contact-item {
+        flex: 1 1 100%; /* Take full width on smaller screens */
+    }
 }
 
 
