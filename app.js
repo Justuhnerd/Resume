@@ -154,10 +154,10 @@ document.addEventListener('DOMContentLoaded', () => {
             initTiltEffects();
             
             // Add confetti effect to contact button
-            initConfetti();
+          //  initConfetti();
             
             // Add typing sound effect
-            initTypingSound();
+           // initTypingSound();
         });
         
         // Custom cursor
